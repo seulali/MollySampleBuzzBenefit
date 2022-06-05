@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://dl.buzzvil.com/public/maven" } // 버즈빌 저장소
+    }
+}
+rootProject.name = "MollySampleBuzzBenefit"
+include ':app'
